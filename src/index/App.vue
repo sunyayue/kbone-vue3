@@ -21,12 +21,11 @@ export default {
     }
   },
   mounted() {
-
   },
   methods: {
     change(){
       this.name = 'bbb'
-      console.log(this.name)
+      // console.log(this.name)
     }
   },
 }
