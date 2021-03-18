@@ -1,6 +1,7 @@
 <template>
   <div class="cntb">
-    <canvas ref="canvas" type="2d" width="600" height="400" @touchstart="clickCanvas"/>
+<!--    <canvas ref="canvas" type="2d" width="600" height="400" @touchstart="clickCanvas"/>-->
+    <canvas ref="canvas" type="2d" width="600" height="400" />
   </div>
 </template>
 
@@ -12,10 +13,11 @@ export default {
     console.log(canvas)
     canvas.width = 600
     canvas.height = 400
+    canvas.addEventListener("touchstart", this.clickCanvas);
   },
   methods: {
-    async clickCanvas(event) {
-      console.log('gaga')
+    clickCanvas(event) {
+      console.log('emit:touchstart')
       console.log(event)
     }
   },
