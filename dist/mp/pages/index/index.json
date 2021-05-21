@@ -1,7 +1,0 @@
-{
-	"navigationBarTextStyle": "black",
-	"enablePullDownRefresh": false,
-	"usingComponents": {
-		"element": "miniprogram-element"
-	}
-}

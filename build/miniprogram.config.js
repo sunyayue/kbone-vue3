@@ -23,6 +23,7 @@ module.exports = {
 		extra: {
 			navigationBarTextStyle: 'black',
 		},
+		rem: true
 	},
 	projectConfig: {
 		appid: '',

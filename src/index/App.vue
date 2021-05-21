@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div @click="change">切换</div>
-    <component :is="name" style="width: 500px;height: 500px"></component>
+<!--    <div @click="change">切换</div>-->
+    <component :is="name"></component>
   </div>
 </template>
 
@@ -21,10 +21,11 @@ export default {
     }
   },
   mounted() {
+    document.documentElement.style.fontSize = 100 + "px"
   },
   methods: {
     change(){
-      this.name = 'bbb'
+      this.name = 'aaa'
       // console.log(this.name)
     }
   },
