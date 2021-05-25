@@ -1,6 +1,7 @@
 <template>
   <div>
 <!--    <div @click="change">切换</div>-->
+    <div v-html="text"></div>
     <component :is="name"></component>
   </div>
 </template>
@@ -17,7 +18,9 @@ export default {
   },
   data(){
     return{
-      name:'aaa'
+      name:'aaa',
+      // text:`<img src="" style="width:100%" alt="">`
+      text:`<img src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2496571732,442429806&fm=26&gp=0.jpg' width="100%">`
     }
   },
   mounted() {
@@ -27,6 +30,25 @@ export default {
     change(){
       this.name = 'aaa'
       // console.log(this.name)
+    },
+    insertImage() {
+      // wx.chooseImage({
+      //   count: 1,
+      //   success: (res) => {
+      //     this.editorCtx.insertImage({
+      //       src: res.tempFilePaths[0],
+      //       data: {
+      //         id: 'abcd',
+      //         role: 'god'
+      //       },
+      //       width: '100%',
+      //       success: function (data) {
+      //         console.log(data);
+      //         console.log('insert image success');
+      //       }
+      //     });
+      //   }
+      // });
     }
   },
 }
